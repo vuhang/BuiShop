@@ -1,0 +1,154 @@
+﻿body {
+}
+.modal-header , .close {
+      background-color: #5cb85c;
+      color:white !important;
+      text-align: center;
+      font-size: 30px;
+  }
+  .modal-footer {
+      background-color: #f9f9f9;
+  }
+/*Header*/
+.logotop a img {width: 58%; margin-left: 35px;}
+.Design_Sale p {color: white; font-size: 35px; text-align: center; padding-top: 27px;}
+.icon_right {padding-top: 26px;}
+.icon_right ul {list-style-type: none;}
+.icon_face {float: left; padding-top: 35px;}
+.icon_face a img {width:25px}
+.icon_gmail {float: left; padding-top: 35px;}
+.icon_gmail a img {width:26px}
+.icon_twitter {float: left; padding-top: 33px;}
+.icon_twitter a img {width:29px}
+.icon_nguoidung a img {width:55px}
+
+.navbar-default {    background-color: #603813;}
+.navbar {margin-bottom:0px;}
+.navbar-default .navbar-nav>li>a {color:white;}
+.navbar-default .navbar-nav>.active>a {
+        color: #000;
+    background-color: #fcc32c;
+    font-weight: 600;
+}
+.navbar-default .navbar-nav>li>a:hover {color:#FCC32C;}
+.form-group {
+    margin-bottom: 0px;
+}
+.seach {
+    height: 30px;
+    border-radius: 30px;
+    margin-top:10px;
+}
+/*End_Header*/
+
+
+
+/*main*/
+.content {margin-top:15px;}
+.danhmucsp h4 {background-color: #725b41; height: 40px; text-align: center; padding-top: 13px; color: white; margin: 0;}
+.danhmucsp ul {list-style-type: none; padding: 0;}
+.danhmucsp ul li a {color: #B3AFAB}
+.vpp {background: url(../images/boderbooton.png) -3px bottom no-repeat; padding: 10px 0px 10px 40px;}
+.ddhs {padding: 5px 0 10px 60px; background: url(../images/boderbooton.png) -3px bottom no-repeat; }
+.ddvp {padding: 5px 0 10px 60px; background: url(../images/boderbooton.png) -3px bottom no-repeat;}
+.dln {background: url(../images/boderbooton.png) -3px bottom no-repeat; padding: 5px 0px 10px 40px;}
+.bb { padding: 5px 0px 0px 40px;}
+.giohang {background-color: #725b41;}
+.giohang h3 {margin: 0; height: 53px; color: white; padding: 14px 0 0 17px; font-weight: 600;float:left}
+.giohang a img { width: 16%; margin-left: 65px; padding-top: 7px;}
+
+
+.vanphongpham {background-color: rgba(0, 0, 0, 0.58); margin-bottom: 15px;}
+.vanphongpham h4 {background-color: #725b41; height: 40px; text-align: center; padding-top: 11px; color: white; margin: 0;}
+.sp {text-align: center;}
+.img-responsive {height: 120px; width: 190px; margin-top: 15px;}
+.sp ul {list-style-type:none; padding-left:0;}
+.sp ul li h5 a {color: white; font-weight: 600;}
+.sp ul li p {background-color: rgba(105, 105, 105, 0.8); border-radius: 30px; color: #dff0d8;}
+.sp ul li button {width: 55%; font-size:14px}
+.shoppingcar {width: 20%; padding-bottom: 2px;}
+
+.doluuniem {background-color: rgba(0, 0, 0, 0.58); margin-bottom: 15px;}
+.doluuniem h4 {background-color: #725b41; height: 40px; text-align: center; padding-top:11px; color: white; margin: 0;}
+
+.baobi {background-color: rgba(0, 0, 0, 0.58); margin-bottom: 15px;}
+.baobi h4 {background-color: #725b41; height: 40px; text-align: center; padding-top: 11px; color: white; margin: 0;}
+
+
+.xemtiep {
+    clear: both;
+    padding: 10px 25px;
+}
+.xemtiep a {border:1px solid #F0AD4E;
+    padding: 0px 6px;
+    color: white;
+    font-size: 14px;}
+.phantrang {clear:both; padding: 10px 0}
+.phantrang a {    border:1px solid #F0AD4E;
+    padding: 0px 6px;
+    color: white;
+    font-size: 17px;}
+
+/*End_main*/
+
+/*Footter*/
+.boderfooter {text-align:center;}
+.boderfooter img {width:90%}
+.logobottom img {width: 70%; float: right;}
+#footer_lh a {color:#D9CAC8;}
+
+
+.vechungtoi {background-color: rgba(0, 0, 0, 0.58); margin-bottom: 15px; }
+.vechungtoi h4 {background-color: #725b41; height: 40px; text-align: center; padding-top: 11px; color: white; margin: 0;}
+.vechungtoi p {color: whitesmoke;
+    font-size: 16px;
+    padding: 30px 40px;}
+
+.nhacungcap {background-color: rgba(0, 0, 0, 0.58); margin-bottom: 15px;  }
+.nhacungcap h4 {background-color: #725b41; height: 40px; text-align: center; padding-top: 11px; color: white; margin: 0;}
+
+
+/*Sobpingcart*/
+.buttonShoppingcardtang {
+        border-radius: 6px;
+    border: 1px solid brown;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 1px 3px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #528009;
+    background-color: brown;
+}
+
+/*.buttonShoppingcardgiam {
+    border-radius: 6px;
+    border: 1px solid #d83526;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 1px 5px;
+    text-decoration: none;
+    text-shado*/w: 0px 1px 0px #b23e35;
+}
+
+.sopping table>tbody>tr>td{vertical-align:middle;}
+
+/**/
+.lienhe {padding-bottom: 15px;}
+.lienhe label {color: white;}
+.lienhe input {background-color: rgba(255, 255, 255, 0.28); border: 2px dashed black;     color: whitesmoke;}
+.lienhe textarea {background-color: rgba(255, 255, 255, 0.28); border: 2px dashed black;     color: whitesmoke;}
+.lienhe button.btn-warning {margin-left:15%}
+
+
+
+.chitietsp {
+    background-color: rgba(0, 0, 0, 0.58); margin-bottom: 15px;
+}
