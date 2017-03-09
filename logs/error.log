@@ -40710,3 +40710,213 @@ Stack Trace:
 #13 {main}
 
 
+2017-03-09 08:06:16 Error: Fatal Error (4): syntax error, unexpected 'class' (T_CLASS), expecting ')' in [C:\xampp\htdocs\VD1_Cake\src\Template\Sanphams\sanphammoi.ctp, line 16]
+Request URL: /VD1_Cake/sanphams/sanphammoi
+Referer URL: http://demo.dev/VD1_Cake/users/login
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 216
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2017-03-09 08:06:18 Error: [Cake\Error\FatalErrorException] syntax error, unexpected 'class' (T_CLASS), expecting ')'
+Request URL: /VD1_Cake/sanphams/sanphammoi
+Referer URL: http://demo.dev/VD1_Cake/users/login
+Client IP: 127.0.0.1
+Stack Trace:
+#0 C:\xampp\htdocs\VD1_Cake\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 16)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2017-03-09 08:08:13 Error: Fatal Error (4): syntax error, unexpected ''class'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [C:\xampp\htdocs\VD1_Cake\src\Template\Sanphams\sanphammoi.ctp, line 16]
+Request URL: /VD1_Cake/sanphams/sanphammoi
+Referer URL: http://demo.dev/VD1_Cake/users/login
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 216
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2017-03-09 08:08:14 Error: [Cake\Error\FatalErrorException] syntax error, unexpected ''class'' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /VD1_Cake/sanphams/sanphammoi
+Referer URL: http://demo.dev/VD1_Cake/users/login
+Client IP: 127.0.0.1
+Stack Trace:
+#0 C:\xampp\htdocs\VD1_Cake\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 16)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2017-03-09 08:08:56 Error: Fatal Error (4): syntax error, unexpected ''class'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [C:\xampp\htdocs\VD1_Cake\src\Template\Sanphams\sanphammoi.ctp, line 16]
+Request URL: /VD1_Cake/sanphams/sanphammoi
+Referer URL: http://demo.dev/VD1_Cake/users/login
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 216
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2017-03-09 08:08:57 Error: [Cake\Error\FatalErrorException] syntax error, unexpected ''class'' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /VD1_Cake/sanphams/sanphammoi
+Referer URL: http://demo.dev/VD1_Cake/users/login
+Client IP: 127.0.0.1
+Stack Trace:
+#0 C:\xampp\htdocs\VD1_Cake\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 16)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2017-03-09 09:36:07 Error: Fatal Error (4): syntax error, unexpected '=', expecting ']' in [C:\xampp\htdocs\VD1_Cake\src\Template\Users\login.ctp, line 10]
+Request URL: /VD1_Cake/users/login
+Referer URL: http://demo.dev/VD1_Cake/users/index
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 216
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2017-03-09 09:36:09 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '=', expecting ']'
+Request URL: /VD1_Cake/users/login
+Referer URL: http://demo.dev/VD1_Cake/users/index
+Client IP: 127.0.0.1
+Stack Trace:
+#0 C:\xampp\htdocs\VD1_Cake\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 10)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2017-03-09 09:38:20 Error: Fatal Error (4): syntax error, unexpected ')', expecting ',' or ';' in [C:\xampp\htdocs\VD1_Cake\src\Template\Users\login.ctp, line 11]
+Request URL: /VD1_Cake/users/login
+Referer URL: http://demo.dev/VD1_Cake/users/index
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 216
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2017-03-09 09:38:21 Error: [Cake\Error\FatalErrorException] syntax error, unexpected ')', expecting ',' or ';'
+Request URL: /VD1_Cake/users/login
+Referer URL: http://demo.dev/VD1_Cake/users/index
+Client IP: 127.0.0.1
+Stack Trace:
+#0 C:\xampp\htdocs\VD1_Cake\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 11)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2017-03-09 09:46:52 Error: Fatal Error (4): syntax error, unexpected '?>' in [C:\xampp\htdocs\VD1_Cake\src\Template\Users\login.ctp, line 10]
+Request URL: /VD1_Cake/users/login
+Referer URL: http://demo.dev/VD1_Cake/users/index
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 216
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2017-03-09 09:46:54 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '?>'
+Request URL: /VD1_Cake/users/login
+Referer URL: http://demo.dev/VD1_Cake/users/index
+Client IP: 127.0.0.1
+Stack Trace:
+#0 C:\xampp\htdocs\VD1_Cake\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 10)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2017-03-09 09:47:35 Error: Fatal Error (4): syntax error, unexpected '?>' in [C:\xampp\htdocs\VD1_Cake\src\Template\Users\login.ctp, line 10]
+Request URL: /VD1_Cake/users/login
+Referer URL: http://demo.dev/VD1_Cake/users/index
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 216
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2017-03-09 09:47:36 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '?>'
+Request URL: /VD1_Cake/users/login
+Referer URL: http://demo.dev/VD1_Cake/users/index
+Client IP: 127.0.0.1
+Stack Trace:
+#0 C:\xampp\htdocs\VD1_Cake\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 10)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2017-03-09 10:24:16 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW) in [C:\xampp\htdocs\VD1_Cake\src\Template\Users\login.ctp, line 25]
+Request URL: /VD1_Cake/users/login
+Referer URL: http://demo.dev/VD1_Cake/users/index
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 216
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2017-03-09 10:24:18 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+Request URL: /VD1_Cake/users/login
+Referer URL: http://demo.dev/VD1_Cake/users/index
+Client IP: 127.0.0.1
+Stack Trace:
+#0 C:\xampp\htdocs\VD1_Cake\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 25)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2017-03-09 10:24:43 Error: Fatal Error (4): syntax error, unexpected ')', expecting ',' or ';' in [C:\xampp\htdocs\VD1_Cake\src\Template\Users\login.ctp, line 25]
+Request URL: /VD1_Cake/users/login
+Referer URL: http://demo.dev/VD1_Cake/users/index
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 216
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2017-03-09 10:24:44 Error: [Cake\Error\FatalErrorException] syntax error, unexpected ')', expecting ',' or ';'
+Request URL: /VD1_Cake/users/login
+Referer URL: http://demo.dev/VD1_Cake/users/index
+Client IP: 127.0.0.1
+Stack Trace:
+#0 C:\xampp\htdocs\VD1_Cake\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 25)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2017-03-09 10:25:06 Error: Fatal Error (4): syntax error, unexpected ')', expecting ',' or ';' in [C:\xampp\htdocs\VD1_Cake\src\Template\Users\login.ctp, line 25]
+Request URL: /VD1_Cake/users/login
+Referer URL: http://demo.dev/VD1_Cake/users/index
+Client IP: 127.0.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 216
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2017-03-09 10:25:07 Error: [Cake\Error\FatalErrorException] syntax error, unexpected ')', expecting ',' or ';'
+Request URL: /VD1_Cake/users/login
+Referer URL: http://demo.dev/VD1_Cake/users/index
+Client IP: 127.0.0.1
+Stack Trace:
+#0 C:\xampp\htdocs\VD1_Cake\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 25)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+

@@ -13,7 +13,7 @@
  <?php foreach($sp as $sanpham): ?>
   <div class="htsp">
     <?= $this->Html->image($sanpham['anh'],array('alt'=>'CakePHP','style'=>'height:160px;
-    width: 190px;'))?>
+    width: 190px;','class'=>'img-rounded'))?>
     <br> 
     <div style="margin-left:20px; with:50px;height:50px">
     <?php echo '<b>'.'Tên sản phẩm:'.'</b>'?>

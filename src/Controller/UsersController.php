@@ -52,6 +52,7 @@ class UsersController extends AppController
 
     public function login()
     {
+        $this->viewBuilder()->layout(false);
          // $email = new Email('gmail');
          //       $email
          //         ->to('conkhisat021293@gmail.com')
