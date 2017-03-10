@@ -6,15 +6,15 @@ use Cake\Valadition\Valadition;
  {
  	public function initialize(array $config)
  	{
- 		$this-> addBehavior('Timetamp');
+ 		//$this-> addBehavior('Timetamp');
  		// liên kết
- 		$this->belongsTo('Sanphams',[
- 			'className'=>'Sanphams',
- 			'foreignKey'=>'id_dm']);
+ 		$this->belongsTo('Products',[
+ 			'className'=>'Products',
+ 			'foreignKey'=>'id_tm']);
  	}
  	public function findalldl($id)
  	{
- 		$query=$this->find('all',['conditions'=>['list.id_dm'=>$id]]);
+ 		$query=$this->find('all',['conditions'=>['Lists.id'=>$id]]);
  		return $query;
  	}
  }

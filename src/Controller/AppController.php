@@ -45,6 +45,7 @@ class AppController extends Controller
 
         $this->loadComponent('RequestHandler');
         $this->loadComponent('Flash');
+        $this->loadComponent('Paginator');
         $this->loadComponent('Auth', [
             'loginAction' => [
                 'controller' => 'Users',
@@ -65,7 +66,7 @@ class AppController extends Controller
                 'action' => 'index'
             ],
             'loginRedirect' => [
-                'controller' => 'Sanphams',
+                'controller' => 'Products',
                 'action' => 'sanphammoi'
             ],
 
@@ -98,8 +99,8 @@ class AppController extends Controller
         ) {
             $this->set('_serialize', true);
         }
-        $listdm= TableRegistry::get('List');
-        $listdms = $listdm->find()->select(['List.id_dm', 'List.tendm'])->order(['List.tendm' =>'ASC'])->all();
+        $listdm= TableRegistry::get('Lists');
+        $listdms = $listdm->find()->select(['Lists.id', 'Lists.name'])->order(['Lists.name' =>'ASC'])->all();
         $this->set(compact('listdms'));
     }
 

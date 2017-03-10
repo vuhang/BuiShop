@@ -25,6 +25,7 @@ class UsersController extends AppController
     {
 		    $this->viewBuilder()->layout('Lay_Out'); 
         $users = $this->Users->find('all');
+        // var_dump($users);die;
         $this->set(compact('users'));
     }
 
@@ -36,7 +37,7 @@ class UsersController extends AppController
 
     public function dangky()
     {
-           $this->viewBuilder()->layout(false);// không muốn kế thừa layout
+           //$this->viewBuilder()->layout(false);// không muốn kế thừa layout
              if ($this->request->is('post')) 
             {
              $users = $this->Users->newEntity($this->request->data);
@@ -52,7 +53,7 @@ class UsersController extends AppController
 
     public function login()
     {
-        $this->viewBuilder()->layout(false);
+        //$this->viewBuilder()->layout(false);
          // $email = new Email('gmail');
          //       $email
          //         ->to('conkhisat021293@gmail.com')

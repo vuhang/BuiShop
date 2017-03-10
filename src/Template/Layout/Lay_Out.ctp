@@ -138,7 +138,7 @@
                         <div class="nav-collapse collapse">
                             <ul class="nav">
                                 <li class="active"><a href="~/Home/Index"></a></li>
-                                <li class="active"><a href="../sanphams/sanphammoi">Trang Chủ</a></li>
+                                <li class="active"><a href="../products/sanphammoi">Trang Chủ</a></li>
                                 <li><a href="#">Giới thiệu</a></li>
                                 <
                                 <li class="dropdown">
@@ -231,7 +231,7 @@
             </div>
             <hr>
             <!--start: Container -->
-            <div class="container">
+            <div class="container" style="margin-bottom: 200px;">
                 <?=$this->fetch('content');?>
             </div>
             <!--end: Container-->

@@ -1,32 +1,16 @@
-<html>
-<head>
-</head>
-<body>
-<h1>LOGIN</h1>
-<?php
-    echo $this->Form->create();
-    echo '<br><br>';
-    echo $this->Form->input('name');
-        echo '<br><br>';
-    echo $this->Form->input('gmail');
-        echo '<br><br>';
-    echo $this->Form->input('username');
-        echo '<br><br>';
-    echo $this->Form->input('password');
-      echo '<br><br>';
-    echo '<div class="checkbox"><b>Sex</b>
-       <label><input type="checkbox" name="sex" value="1"> Nam</label>
-       <label><input type="checkbox" name="sex" value="0"> Nữ</label>';
-    echo '</div>';
-    echo $this->Form->input('sex');
-  
-    echo $this->Form->button(__('Save User'));
-    echo $this->Form->end();
-?>
-</body>
-</html>
-<style type="text/css">
-     box-shadow{
-          width: 40%;
-     }
-</style>>
+<div class="users form">
+<?= $this->Flash->render() ?>
+<?= $this->Form->create() ?>
+    <div style="border :1px solid black;width: 421px;height: 448px;margin-left: 500px;
+    margin-top: 73px;padding-top: 48px;">
+        
+        <div style="width: 226px;margin-left: 102px;">
+         <?= $this->Form->input('name') ?>
+          <?= $this->Form->input('gmail') ?>
+        <?= $this->Form->input('username') ?>
+        <?= $this->Form->input('password') ?>
+        <?= $this->Form->button(__('Save user'), ['style' => 'margin-right: 44px;
+      margin-top: 20px;background: cadetblue;']); ?>
+    
+<?= $this->Form->end() ?>
+</div>

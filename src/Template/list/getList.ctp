@@ -1,3 +1,3 @@
 <?php foreach($type as $value):?>
- <?= $this->Html->link($value->tendm, ['action' => '../sanphams/getsanpham',$value->id_dm]) ?>
+ <?= $this->Html->link($value->name, ['action' => '../products/getproduct',$value->id]) ?>
 <?php endforeach;?>
