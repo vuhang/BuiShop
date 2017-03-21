@@ -8,20 +8,28 @@
   padding-top: 20px;
 }
 </style>
-<h1 style ="color: #6E6E6E; margin-left:38%;"> Sản phẩm theo loại</h1>
-<div class="ttrang">
+<div class="col-md-12 p-left">
+<div class="product-one">
  <?php foreach($sp as $product): ?>
-  <div class="htsp">
-    <?= $this->Html->image($product['img'],array('alt'=>'CakePHP','style'=>'height:160px;
-    width: 190px;'))?>
-    <br> 
-    <div style="margin-left:20px; with:50px;height:50px">
-    <?php echo '<b>'.'Tên sản phẩm:'.'</b>'?>
-    <?= $product->name?><br>
-    <?php echo '<b>'.'Giá sản phẩm:'.'</b>'?>
-    <?= h($product->Price) ?><br>
-    <?= $this->Html->link('Chi tiết',['action' => '../products/details', $product->id], ['style' => '']) ?>
-   </div>
-  </div>
+   <div class="col-md-3 product-left single-left"> 
+          <div class="p-one simpleCart_shelfItem">
+            <a href="single.html">
+                <?= $this->Html->image($product['img'],array('alt'=>'CakePHP','style'=>'height:160px;
+                width: 190px;','class'=>'img-rounded'))?>
+          
+              </a>
+            <h4><?= h($product->name)?></h4>
+            <p><a class="item_add" href="#"><i></i> <span class=" item_price" style="font-size: 18px;"><?= h($product->Price) ?></span></a></p>
+            <div class="item_chitiet">
+            <?= $this->Html->link('Chi tiết',['action' => '../products/details', $product->id], ['style' => '']) ?>
+            </div>
+          </div>
+        </div>
  <?php endforeach; ?>
 </div>
+</div>
+ <div class="pagination">
+ <nav><ul class="pagination pagination-lg", style="margin-left: 548px;"><?php echo $this->Paginator->numbers(); ?></ul></nav>
+ </div
+       
+       

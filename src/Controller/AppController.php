@@ -99,9 +99,16 @@ class AppController extends Controller
         ) {
             $this->set('_serialize', true);
         }
-        $listdm= TableRegistry::get('Lists');
-        $listdms = $listdm->find()->select(['Lists.id', 'Lists.name'])->order(['Lists.name' =>'ASC'])->all();
-        $this->set(compact('listdms'));
+        $this->loadModel('Lists');
+        $listdm =$this->Lists->find('all');
+        $listdms =$this->Lists->find('all',['conditions'=>['Lists.type'=>1]]);
+        $this->set(compact('listdm','listdms'));
+
+
+        $listdms2 =$this->Lists->find('all',['conditions'=>['Lists.type'=>2]]);
+        $this->set(compact('listdm','listdms2'));
+
+
     }
 
     public function beforeFilter(Event $event)

@@ -69,7 +69,7 @@ class ProductsController extends AppController
     {
         $sp = $this->Products->find('all');
        // var_dump($sp);die;
-        $this->set('sp', $this->paginate($sp,['limit' => 4,
+        $this->set('sp', $this->paginate($sp,['limit' => 8,
          'order' => [ 
              'products.id' => 'asc'
          ]]));
@@ -83,7 +83,7 @@ class ProductsController extends AppController
     public function getproduct($id)
     {
        $sp = $this->Products->find('all',['conditions' => ['products.id_tm' =>$id]]);
-        $this->set('sp', $this->paginate($sp,['limit' => 4,
+        $this->set('sp', $this->paginate($sp,['limit' => 8,
          'order' => [
              'products.id_tm' => 'asc'
          ]]));
