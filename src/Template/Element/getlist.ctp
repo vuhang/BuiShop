@@ -1,5 +1,3 @@
-
-
 <?php foreach($listdms as $value):?>
 	 <div class="col1 me-one">
         <ul>

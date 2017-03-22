@@ -14,7 +14,10 @@ class UsersController extends AppController
     var $name = "Users";
     
     var $component = array("Session");
-
+    public function initialize()
+    {
+        parent::initialize();
+    }
      public function beforeFilter(Event $event)
     {
         parent::beforeFilter($event);
@@ -23,7 +26,7 @@ class UsersController extends AppController
 
 	public function index()
     {
-		    $this->viewBuilder()->layout('Lay_Out'); 
+		$this->viewBuilder()->layout(false); 
         $users = $this->Users->find('all');
         // var_dump($users);die;
         $this->set(compact('users'));
@@ -37,7 +40,7 @@ class UsersController extends AppController
 
     public function dangky()
     {
-           $this->viewBuilder()->layout(false);// không muốn kế thừa layout
+           $this->viewBuilder()->layout(false);
              if ($this->request->is('post')) 
             {
              $users = $this->Users->newEntity($this->request->data);
@@ -81,6 +84,29 @@ class UsersController extends AppController
 
     public function logout(){
         return $this->redirect($this->Auth->logout());
+    }
+    public function edit($id)
+    {
+        $users = $this->Users->get($id);
+        if ($this->request->is(['post', 'put'])) {
+            $this->request->data['id']=$id;
+            pr($id);die();
+            $moi=$this->Users->patchEntity($users, $this->request->data);
+            if ($this->Users->save($moi)) {
+                $this->Flash->success(__('Your article has been updated.'));
+                return $this->redirect(['action' => 'index']);
+            }
+            $this->Flash->error(__('Unable to update your article.'));
+        }
+        $this->set('users', $users);
+    }
+    public function delete($id){
+        $this->request->allowMethod(['post', 'delete']);
+        $users = $this->Users->get($id);
+        if ($this->Users->delete($users)) {
+            $this->Flash->success(__('The article with id: {0} has been deleted.', h($id)));
+            return $this->redirect(['action' => 'index']);
+        }
     }
 
 }

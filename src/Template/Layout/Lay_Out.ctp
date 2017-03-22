@@ -47,7 +47,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <div class="container">
         <div class="top-header-main">
             <div class="col-md-4 top-header-middle">
-                <a href="index.html">  <?= $this->Html->image('/images/logo_3.jpg',
+                <a href="#">  <?= $this->Html->image('/images/logo_3.jpg',
                             ['style' => 'width: 134px;
                             margin-left: -359px;
                             margin-top: -31px;
@@ -74,16 +74,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <li class="grid"><a href="#">Blind</a>
                         <div class="mepanel">
                             <div class="row">
-                                <div class="col1 me-one">
+                                <?= $this->Element('getList2');?>
                             </div>
                         </div>
                     </li>
                      <li class="grid"><a href="#">Balo</a>
                         <div class="mepanel">
                             <div class="row">
-                                <div class="col1 me-one">
-                                   
-                            </div>
+                                   <?= $this->Element('getList3');?>
                         </div>
                     </li>
                     <li class="grid"><li class="dropdown">
@@ -114,7 +112,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             <span class="simpleCart_total"></span> (<span id="simpleCart_quantity" class="simpleCart_quantity"></span> items)</div>
                             <?= $this->Html->image('/images/cart-1.png'); ?>
                         </a>
-                        <p><a href="javascript:;" class="simpleCart_empty">Empty Cart</a></p>
+                        <p><a href="#" class="simpleCart_empty">Empty Cart</a></p>
                         <div class="clearfix"> </div>
                     </div>
             </div>
@@ -170,14 +168,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <div class="col-md-6 banner-bottom-left">
                     <div class="bnr-one">
                         <div class="bnr-left">
-                            <h1><a href="single.html">Duis dictum volutpat</a></h1>
+                            <h1><a href="#">Duis dictum volutpat</a></h1>
                             <p>Nulla tempus facilisis purus at.</p>
                             <div class="b-btn"> 
-                                <a href="single.html">SHOP NOW</a>
+                                <a href="#">SHOP NOW</a>
                             </div>
                         </div>
                         <div class="bnr-right"> 
-                            <a href="single.html"><?= $this->Html->image('/images/b-1.jpg'); ?></a>
+                            <a href="#"><?= $this->Html->image('/images/b-1.jpg'); ?></a>
                         </div>
                         <div class="clearfix"> </div>
                     </div>
@@ -185,14 +183,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <div class="col-md-6 banner-bottom-right">
                     <div class="bnr-two">
                         <div class="bnr-left">
-                            <h2><a href="single.html">Phasellus quis nunc</a></h2>
+                            <h2><a href="#">Phasellus quis nunc</a></h2>
                             <p>Nulla tempus facilisis purus at.</p>
                             <div class="b-btn"> 
-                                <a href="single.html">SHOP NOW</a>
+                                <a href="#">SHOP NOW</a>
                             </div>
                         </div>
                         <div class="bnr-right"> 
-                            <a href="single.html"><?= $this->Html->image('/images/b-2.jpg'); ?></a>
+                            <a href="#"><?= $this->Html->image('/images/b-2.jpg'); ?></a>
                         </div>
                         <div class="clearfix"> </div>
                     </div>
@@ -215,22 +213,22 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <div class="abt-shoe-main">
                 <div class="col-md-4 abt-shoe-left">
                     <div class="abt-one">
-                        <a href="single.html"><?= $this->Html->image('/images/abt-1.jpg'); ?></a>
-                        <h4><a href="single.html">Cras dolor ligula</a></h4>
+                        <a href="#"><?= $this->Html->image('/images/abt-1.jpg'); ?></a>
+                        <h4><a href="#">Cras dolor ligula</a></h4>
                         <p>Phasellus auctor vulputate egestas. Nulla facilisi. Cras dolor ligula, pharetra vitae efficitur ac, tempus vitae nisl. Aliquam erat volutpat. </p>
                     </div>
                 </div>
                 <div class="col-md-4 abt-shoe-left">
                     <div class="abt-one">
-                        <a href="single.html"><?= $this->Html->image('/images/abt-2.jpg'); ?></a>
-                        <h4><a href="single.html">Cras dolor ligula</a></h4>
+                        <a href="#"><?= $this->Html->image('/images/abt-2.jpg'); ?></a>
+                        <h4><a href="#">Cras dolor ligula</a></h4>
                         <p>Phasellus auctor vulputate egestas. Nulla facilisi. Cras dolor ligula, pharetra vitae efficitur ac, tempus vitae nisl. Aliquam erat volutpat. </p>
                     </div>
                 </div>
                 <div class="col-md-4 abt-shoe-left">
                     <div class="abt-one">
-                        <a href="single.html"><?= $this->Html->image('/images/abt-3.jpg'); ?></a>
-                        <h4><a href="single.html">Cras dolor ligula</a></h4>
+                        <a href="#"><?= $this->Html->image('/images/abt-3.jpg'); ?></a>
+                        <h4><a href="#">Cras dolor ligula</a></h4>
                         <p>Phasellus auctor vulputate egestas. Nulla facilisi. Cras dolor ligula, pharetra vitae efficitur ac, tempus vitae nisl. Aliquam erat volutpat. </p>
                     </div>
                 </div>
@@ -257,11 +255,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <div class="col-md-3 footer-left">
                     <h3>YOUR ACCOUNT</h3>
                     <ul>
-                        <li><a href="account.html">Your Account</a></li>
+                        <li><a href="#">Your Account</a></li>
                         <li><a href="#">Personal Information</a></li>
-                        <li><a href="contact.html">Addresses</a></li>
+                        <li><a href="#">Addresses</a></li>
                         <li><a href="#">Discount</a></li>
-                        <li><a href="#">Track your order</a></li>                                        
+                        <li><a hr="#">Track your order</a></li>                                        
                     </ul>
                 </div>
                 <div class="col-md-3 footer-left">

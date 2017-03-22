@@ -1,3 +1,4 @@
+
 <!--A Design by W3layouts 
 Author: W3layout
 Author URL: http://w3layouts.com
@@ -9,7 +10,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <head>
 <title>Free Style A Ecommerce Category Flat Bootstarp Resposive Website Template | Home :: w3layouts</title>
 <?= $this->Html->css('bootstrap.css') ?>
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <?= $this->Html->script('jquery-1.11.0.min'); ?>
 <!-- Custom Theme files -->
 <!--theme-style-->
@@ -40,30 +40,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <?= $this->Html->script('memenu'); ?>
 <script>$(document).ready(function(){$(".memenu").memenu();});</script>             
 </head>
+
 <body> 
     <!--top-header-->
     <div class="top-header">
     <div class="container">
         <div class="top-header-main">
-            <div class="col-md-4 top-header-left">
-                <div class="search-bar">
-                    <input type="text" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}">
-                    <input type="submit" value="">
-                </div>
-            </div>
             <div class="col-md-4 top-header-middle">
-                <a href="index.html"><img src="images/logo-4.png" alt="" /></a>
-            </div>
-            <div class="col-md-4 top-header-right">
-                <div class="cart box_1">
-                        <a href="checkout.html">
-                        <h3> <div class="total">
-                            <span class="simpleCart_total"></span> (<span id="simpleCart_quantity" class="simpleCart_quantity"></span> items)</div>
-                            <img src="images/cart-1.png" alt="" />
-                        </a>
-                        <p><a href="javascript:;" class="simpleCart_empty">Empty Cart</a></p>
-                        <div class="clearfix"> </div>
-                    </div>
+                <a href="#">  <?= $this->Html->image('/images/logo_3.jpg',
+                            ['style' => 'width: 134px;
+                            margin-left: -359px;
+                            margin-top: -31px;
+                            margin-bottom: -69px;']); ?></a>
             </div>
             <div class="clearfix"></div>
         </div>
@@ -74,50 +62,59 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <div class="header-bottom">
         <div class="container">
             <div class="top-nav">
-                <ul class="memenu skyblue"><li class="active"><a href="index.html">Home</a></li>
-                    <li class="grid"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Danh Mục<b class="caret"></b></a>
+            
+                <ul class="memenu skyblue" style="margin-left: -180px;"><li class="active"> <?= $this->Html->link('Home', ['action' => '../products/sanphammoi'],['style'=>'color: #8c2830']) ?></li>
+                    <li class="grid"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Shose<b class="caret"></b></a>
                         <div class="mepanel">
                             <div class="row">
                                     <?= $this->Element('getList');?>
                             </div>
                         </div>
                     </li>
-                    <li class="grid"><a href="#">Women</a>
+                    <li class="grid"><a href="#">Blind</a>
                         <div class="mepanel">
                             <div class="row">
-                                <div class="col1 me-one">
-                                    
+                                <?= $this->Element('getList2');?>
                             </div>
                         </div>
                     </li>
+                     <li class="grid"><a href="#">Balo</a>
+                        <div class="mepanel">
+                            <div class="row">
+                                   <?= $this->Element('getList3');?>
+                        </div>
+                    </li>
                     <li class="grid"><li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tài khoản<b class="caret"></b></a>
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                        Account <span class="caret"></span> </a>
+                                    
                                     <ul class="mepanel" style="width:150px;">
-                                        <li class="nav-header"><a href= "dangky">Đăng Ký</a></li>
+                                        <li class="nav-header"> <?= $this->Html->link('Đăng Kí', ['action' => '../users/dangky'],['style' => 'font-weight: bold']) ?></li>
                                          <li class="divider"></li>
-                                        <li class="nav-header"><a href= "login">Đăng nhập</a></li>
+                                        <li class="nav-header"> <?= $this->Html->link('Đăng Nhập', ['action' => '../users/login'],['style' => 'font-weight: bold']) ?></li>
                                        
 
                                     </ul>
                                 </li>
                     </li>
-                    <li class="grid"><a href="#">Sports</a>
-                        <div class="mepanel">
-                            <div class="row">
-                                <div class="col1 me-one">
-                                   
-                            </div>
-                        </div>
-                    </li>
-                    <li class="grid"><a href="#">Brands</a>
-                        <div class="mepanel">
-                            <div class="row">
-                                <div class="col1 me-one">
-                                    
-                            </div>
-                        </div>
-                    </li>
                 </ul>
+            </div>
+            <div class="col-md-4 top-header-left" style="margin-left: 722px;margin-bottom: 12px;margin-top: -47px;">
+                <div class="search-bar">
+                    <input type="text" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}">
+                    <input type="submit" value="">
+                </div>
+            </div>
+             <div class="col-md-4 top-header-right" style="margin-left: 766px; margin-top: -55px;margin-bottom: -3px;">
+                <div class="cart box_1">
+                        <a href="checkout.html">
+                        <h3> <div class="total">
+                            <span class="simpleCart_total"></span> (<span id="simpleCart_quantity" class="simpleCart_quantity"></span> items)</div>
+                            <?= $this->Html->image('/images/cart-1.png'); ?>
+                        </a>
+                        <p><a href="#" class="simpleCart_empty">Empty Cart</a></p>
+                        <div class="clearfix"> </div>
+                    </div>
             </div>
             <div class="clearfix"> </div>
         </div>
@@ -171,14 +168,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <div class="col-md-6 banner-bottom-left">
                     <div class="bnr-one">
                         <div class="bnr-left">
-                            <h1><a href="single.html">Duis dictum volutpat</a></h1>
+                            <h1><a href="#">Duis dictum volutpat</a></h1>
                             <p>Nulla tempus facilisis purus at.</p>
                             <div class="b-btn"> 
-                                <a href="single.html">SHOP NOW</a>
+                                <a href="#">SHOP NOW</a>
                             </div>
                         </div>
                         <div class="bnr-right"> 
-                            <a href="single.html"><?= $this->Html->image('/images/b-1.jpg'); ?></a>
+                            <a href="#"><?= $this->Html->image('/images/b-1.jpg'); ?></a>
                         </div>
                         <div class="clearfix"> </div>
                     </div>
@@ -186,14 +183,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <div class="col-md-6 banner-bottom-right">
                     <div class="bnr-two">
                         <div class="bnr-left">
-                            <h2><a href="single.html">Phasellus quis nunc</a></h2>
+                            <h2><a href="#">Phasellus quis nunc</a></h2>
                             <p>Nulla tempus facilisis purus at.</p>
                             <div class="b-btn"> 
-                                <a href="single.html">SHOP NOW</a>
+                                <a href="#">SHOP NOW</a>
                             </div>
                         </div>
                         <div class="bnr-right"> 
-                            <a href="single.html"><?= $this->Html->image('/images/b-2.jpg'); ?></a>
+                            <a href="#"><?= $this->Html->image('/images/b-2.jpg'); ?></a>
                         </div>
                         <div class="clearfix"> </div>
                     </div>
@@ -204,127 +201,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     </div>
     <!--end-banner-bottom--> 
     <!--start-shoes--> 
-    <div class="shoes"> 
-        <div class="container"> 
-            <div class="product-one">
-                <div class="col-md-3 product-left"> 
-                    <div class="p-one simpleCart_shelfItem">                            
-                            <a href="single.html">
-                            <?= $this->Html->image('shoes-1.jpg'); ?>
-                                <div class="mask">
-                                    <span>Quick View</span>
-                                </div>
-                            </a>
-                        <h4>Aenean placerat</h4>
-                        <p><a class="item_add" href="#"><i></i> <span class=" item_price">$329</span></a></p>
-                    
-                    </div>
-                </div>
-                <div class="col-md-3 product-left"> 
-                    <div class="p-one simpleCart_shelfItem">
-                        
-                        <a href="single.html">
-                        <?= $this->Html->image('shoes-2.jpg'); ?>
-                                <div class="mask">
-                                    <span>Quick View</span>
-                                </div>
-                            </a>
-                        <h4>Aenean placerat</h4>
-                        <p><a class="item_add" href="#"><i></i> <span class=" item_price">$329</span></a></p>
-                        
-                    </div>
-                </div>
-                <div class="col-md-3 product-left"> 
-                    <div class="p-one simpleCart_shelfItem">
-                        
-                        <a href="single.html">
-                        <?= $this->Html->image('shoes-3.jpg'); ?>
-                                <div class="mask">
-                                    <span>Quick View</span>
-                                </div>
-                            </a>
-                        <h4>Aenean placerat</h4>
-                        <p><a class="item_add" href="#"><i></i> <span class=" item_price">$329</span></a></p>
-                        
-                    </div>
-                </div>
-                <div class="col-md-3 product-left"> 
-                    <div class="p-one simpleCart_shelfItem">
-                        
-                        <a href="single.html">
-                                <?= $this->Html->image('shoes-13.jpg'); ?>
-                                <div class="mask">
-                                    <span>Quick View</span>
-                                </div>
-                            </a>
-                        <h4>Aenean placerat</h4>
-                        <p><a class="item_add" href="#"><i></i> <span class=" item_price">$329</span></a></p>
-                        
-                    </div>
-                </div>
-                <div class="clearfix"> </div>
+    <!--start: Container -->
+            <div class="container" style="margin-bottom: 200px;">
+                <?=$this->fetch('content');?>
             </div>
-            <div class="product-one">
-                <div class="col-md-3 product-left"> 
-                    <div class="p-one simpleCart_shelfItem">
-                        
-                        <a href="single.html">
-                                <?= $this->Html->image('shoes-5.jpg'); ?>
-                                <div class="mask">
-                                    <span>Quick View</span>
-                                </div>
-                            </a>
-                        <h4>Aenean placerat</h4>
-                        <p><a class="item_add" href="#"><i></i> <span class=" item_price">$329</span></a></p>
-                        
-                    </div>
-                </div>
-                <div class="col-md-3 product-left"> 
-                    <div class="p-one simpleCart_shelfItem">
-                        
-                        <a href="single.html">
-                                <?= $this->Html->image('shoes-6.jpg'); ?>
-                                <div class="mask">
-                                    <span>Quick View</span>
-                                </div>
-                            </a>
-                        <h4>Aenean placerat</h4>
-                        <p><a class="item_add" href="#"><i></i> <span class=" item_price">$329</span></a></p>
-                        
-                    </div>
-                </div>
-                <div class="col-md-3 product-left"> 
-                    <div class="p-one simpleCart_shelfItem">
-                        
-                        <a href="single.html">
-                                <?= $this->Html->image('shoes-7.jpg'); ?>
-                                <div class="mask">
-                                    <span>Quick View</span>
-                                </div>
-                            </a>
-                        <h4>Aenean placerat</h4>
-                        <p><a class="item_add" href="#"><i></i> <span class=" item_price">$329</span></a></p>
-                        
-                    </div>
-                </div>
-                <div class="col-md-3 product-left"> 
-                    <div class="p-one simpleCart_shelfItem">
-                        
-                        <a href="single.html">
-                                <?= $this->Html->image('shoes-8.jpg'); ?>
-                                <div class="mask">
-                                    <span>Quick View</span>
-                                </div>
-                            </a>
-                        <h4>Aenean placerat</h4>
-                        <p><a class="item_add" href="#"><i></i> <span class=" item_price">$329</span></a></p>
-                        
-                    </div>
-                </div>
-                <div class="clearfix"> </div>
-            </div>
-        </div>
-    </div>
+            
     <!--end-shoes-->
     <!--start-abt-shoe-->
     <div class="abt-shoe">
@@ -332,22 +213,22 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <div class="abt-shoe-main">
                 <div class="col-md-4 abt-shoe-left">
                     <div class="abt-one">
-                        <a href="single.html"><?= $this->Html->image('abt-1.jpg'); ?></a>
-                        <h4><a href="single.html">Cras dolor ligula</a></h4>
+                        <a href="#"><?= $this->Html->image('/images/abt-1.jpg'); ?></a>
+                        <h4><a href="#">Cras dolor ligula</a></h4>
                         <p>Phasellus auctor vulputate egestas. Nulla facilisi. Cras dolor ligula, pharetra vitae efficitur ac, tempus vitae nisl. Aliquam erat volutpat. </p>
                     </div>
                 </div>
                 <div class="col-md-4 abt-shoe-left">
                     <div class="abt-one">
-                        <a href="single.html"><?= $this->Html->image('abt-2.jpg'); ?></a>
-                        <h4><a href="single.html">Cras dolor ligula</a></h4>
+                        <a href="#"><?= $this->Html->image('/images/abt-2.jpg'); ?></a>
+                        <h4><a href="#">Cras dolor ligula</a></h4>
                         <p>Phasellus auctor vulputate egestas. Nulla facilisi. Cras dolor ligula, pharetra vitae efficitur ac, tempus vitae nisl. Aliquam erat volutpat. </p>
                     </div>
                 </div>
                 <div class="col-md-4 abt-shoe-left">
                     <div class="abt-one">
-                        <a href="single.html"><?= $this->Html->image('abt-3.jpg'); ?></a>
-                        <h4><a href="single.html">Cras dolor ligula</a></h4>
+                        <a href="#"><?= $this->Html->image('/images/abt-3.jpg'); ?></a>
+                        <h4><a href="#">Cras dolor ligula</a></h4>
                         <p>Phasellus auctor vulputate egestas. Nulla facilisi. Cras dolor ligula, pharetra vitae efficitur ac, tempus vitae nisl. Aliquam erat volutpat. </p>
                     </div>
                 </div>
@@ -374,11 +255,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <div class="col-md-3 footer-left">
                     <h3>YOUR ACCOUNT</h3>
                     <ul>
-                        <li><a href="account.html">Your Account</a></li>
+                        <li><a href="#">Your Account</a></li>
                         <li><a href="#">Personal Information</a></li>
-                        <li><a href="contact.html">Addresses</a></li>
+                        <li><a href="#">Addresses</a></li>
                         <li><a href="#">Discount</a></li>
-                        <li><a href="#">Track your order</a></li>                                        
+                        <li><a hr="#">Track your order</a></li>                                        
                     </ul>
                 </div>
                 <div class="col-md-3 footer-left">
@@ -411,7 +292,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <div class="footer-text">
         <div class="container">
             <div class="footer-main">
-                <p class="footer-class">© 2015 Free Style All Rights Reserved | Design by  <a href="http://w3layouts.com/" target="_blank">W3layouts</a> </p>
+                <p class="footer-class">© Bùi store đồng hành trên con đường thành công của bạn !!!  <a href="http://w3layouts.com/" target="_blank"></a> </p>
             </div>
         </div>
         <script type="text/javascript">

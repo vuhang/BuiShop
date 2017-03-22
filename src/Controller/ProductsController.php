@@ -24,7 +24,8 @@ class ProductsController extends AppController
 
     }
 
-	public function index($alias) {
+	public function index() 
+    {
         $kqload = $this->Products->find('all');
         $this->set(compact('kqload'));
     }
