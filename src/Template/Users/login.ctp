@@ -48,7 +48,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <a href="index.html">  <?= $this->Html->image('/images/logo_3.jpg',
                             ['style' => 'width: 134px;
                             margin-left: -359px;
-                            margin-top: -31px;
+                            margin-top: 7px;
                             margin-bottom: -69px;']); ?></a>
             </div>
             <div class="clearfix"></div>
@@ -130,7 +130,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
           <?= $this->Form->create() ?>
           <div class="account-top heading">
             <h3 style="color: darkred;margin-left: 28%;
-                font-size: 32px;">REGISTERED</h3>
+                font-size: 32px;">LOGIN</h3>
           </div>
           <div class="address">
             <?= $this->Form->input('username') ?>

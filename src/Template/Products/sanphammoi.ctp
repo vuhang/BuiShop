@@ -12,8 +12,8 @@
 <div class="product-one">
  <?php foreach($sp as $product): ?>
    <div class="col-md-3 product-left single-left"> 
-          <div class="p-one simpleCart_shelfItem">
-            <a href="single.html">
+       <div class="p-one simpleCart_shelfItem">
+            <a href="#">
                 <?= $this->Html->image($product['img'],array('alt'=>'CakePHP','style'=>'height:160px;
                 width: 190px;','class'=>'img-rounded'))?>
           
@@ -29,7 +29,7 @@
 </div>
 </div>
 <div class="pagination">
- <nav><ul class="pagination pagination-lg", style="margin-left: 548px;"><?php echo $this->Paginator->numbers(); ?></ul></nav>
+ <nav><ul class="pagination pagination-lg"style="margin-left: 548px;"><?php echo $this->Paginator->numbers(); ?></ul></nav>
  </div
        
        

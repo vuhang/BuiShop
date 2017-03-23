@@ -50,7 +50,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <a href="#">  <?= $this->Html->image('/images/logo_3.jpg',
                             ['style' => 'width: 134px;
                             margin-left: -359px;
-                            margin-top: -31px;
+                            margin-top: 7px;
                             margin-bottom: -69px;']); ?></a>
             </div>
             <div class="clearfix"></div>
@@ -151,6 +151,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
        <?php endforeach; ?>
     </tbody>
   </table>
+  <div class="pagination">
+ <nav><ul class="pagination pagination-lg", style="margin-left: 548px;"><?php echo $this->Paginator->numbers(); ?></ul></nav>
+ </div
     </div>
     <!--banner-ends--> 
     <!--Slider-Starts-Here-->

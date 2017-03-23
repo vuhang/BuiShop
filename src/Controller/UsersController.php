@@ -30,6 +30,10 @@ class UsersController extends AppController
         $users = $this->Users->find('all');
         // var_dump($users);die;
         $this->set(compact('users'));
+        $this->set('users', $this->paginate($users,['limit' => 4,
+         'order' => [ 
+             'users.id' => 'asc'
+         ]]));
     }
 
     public function view($id=2)
@@ -87,10 +91,11 @@ class UsersController extends AppController
     }
     public function edit($id)
     {
+        $this->viewBuilder()->layout(false);
         $users = $this->Users->get($id);
         if ($this->request->is(['post', 'put'])) {
             $this->request->data['id']=$id;
-            pr($id);die();
+            // pr($id);die();
             $moi=$this->Users->patchEntity($users, $this->request->data);
             if ($this->Users->save($moi)) {
                 $this->Flash->success(__('Your article has been updated.'));
